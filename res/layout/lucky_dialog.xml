@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CBBEB5" >
+
+    <ImageView
+        android:id="@+id/lucky_ticket"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ticket" />
+
+    <TextView
+        android:id="@+id/lucky_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lucky_ticket"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:text="幸運指數比: "
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/lucky_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lucky_info"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/lucky_info"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/lucky_info_lottery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lucky_info"
+        android:layout_below="@+id/lucky_info"
+        android:layout_marginLeft="10dp"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/lucky_info_lottery"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF" />
+
+    <Button
+        android:id="@+id/dialogButtonOK"
+        style="@style/btnStyleopal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:layout_centerHorizontal="true"
+        android:text="確定" />
+
+</RelativeLayout>
